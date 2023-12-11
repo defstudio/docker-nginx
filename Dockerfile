@@ -4,8 +4,7 @@ RUN mkdir /var/backend_not_found
 COPY ./backend_not_found.html /var/backend_not_found/backend-not-found.html
 
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends openssl nginx-plus-module-brotli
-
+RUN apt-get install -y --no-install-recommends openssl
 RUN mkdir -p /etc/nginx/ssl/
 
 RUN openssl req \
