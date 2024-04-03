@@ -7,7 +7,6 @@ RUN apt-get update
 RUN apt-get install -y --no-install-recommends openssl
 RUN mkdir -p /etc/nginx/ssl/
 
-
 RUN openssl req \
         -x509 \
         -subj "/C=IT/ST=Denial/L=Nowere/O=Dis" \
